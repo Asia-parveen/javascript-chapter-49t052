@@ -1,0 +1,10 @@
+body{
+    background-color: antiquewhite;
+}
+#section{
+    height: 100vh;
+}
+
+#more-text{
+    display: none;
+}

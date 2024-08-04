@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Sighnup submit form</h2>
+
+    <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br/><br/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br/><br/>
+        <input type="submit" value="Submit"> <br/>
+    </form>
+    <h1>Form data:</h1>
+    <p id="formData"></p><br/><br/>
+    <hr>
+
+    <h1>item Details</h1>
+    <p><strong> is a descraption of my item</strong><br><br>
+    <span id="more-text"><i><strong> size: Medium<br> shirt color: Black<br> it is soft material<br>washable and dry clean</strong></i> </span>
+</p>
+    <button id="readMoreBtn">Read more</button><br/><br/>
+    <hr>
+
+    <h2>Student Details Form</h2>
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="text" id="grade" placeholder="Grade" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Students List</h2>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <div id="editForm">
+        <h2>Edit Student Details</h2>
+        <form id="updateStudentForm">
+            <input type="hidden" id="editIndex">
+            <input type="text" id="editName" required>
+            <input type="number" id="editAge" required>
+            <input type="text" id="editGrade" required>
+            <button type="submit">Update Student</button>
+        </form>
+    </div>
+
+
+
+    
+
+    <script src="app.js"></script>
+
+</body>
+</html>
